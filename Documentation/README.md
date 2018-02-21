@@ -1,0 +1,1 @@
+If you want to read the documentation, you have to download and open it in your preferred browser.

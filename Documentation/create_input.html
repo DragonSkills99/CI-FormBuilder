@@ -1,0 +1,36 @@
+<h2>Create Input</h2>
+<p>To create an input you have to create an field with the function addField() return Field:</p>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;$this-&gt;formbuilder-&gt;addField();</p>
+<p>Now you've an empty Field. If you generate the form there will be an textfield but you can't do anything with it instead of typing text in. To customize the field you have the following options</p>
+<ul>
+<li>set an attribute (in this example an link was created) setAttribute(name as string, value as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setAttribute("href", "http://google.com");</p>
+<ul>
+<li>set the text of the lable in front of the input setDescription(text as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setDescription("Name:");</p>
+<ul>
+<li>set the name attribute so the form knows where to put the value setName(name as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setName("name");</p>
+<ul>
+<li>set the value attribute so you have an initial value in the input (for textareas use setInnerValue instead) setValue(value as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setValue("Sebastian Michaelis");</p>
+<ul>
+<li>insert text beetween the opening and closing tag after all childs setInnerValue(value as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setInnerValue("Kazuto Kirigaya");</p>
+<ul>
+<li>set the type of the input (e.g. if you want to only get numbers in this field enter "number") setType(type as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setType("text");</p>
+<ul>
+<li>set if the descriptive lable should be shown (true means it won't be shown, false means it will be shown. Standard is false) setFillBothRows(value as boolean) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setFillBothRows(false);</p>
+<ul>
+<li>set the class attribute for styling purposes setClass(value as string) returns Field:</li>
+</ul>
+<p style="background-color: #454545; color: #fff; padding-left: 30px;">&nbsp;Field-&gt;setClass("nameinput");</p>

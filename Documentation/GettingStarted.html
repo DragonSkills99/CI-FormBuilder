@@ -1,0 +1,25 @@
+<h2>Getting started</h2>
+<p>For using FormBuilder you have to load the library first. You can do this inside of an CI_Controller:</p>
+<div style="background-color: #454545; width: 100%;">
+<blockquote><span style="color: #ffff00;">$this</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">load</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">library(</span><span style="color: #ff9900;">"FormBuilder"</span><span style="color: #ffffff;">);</span></blockquote>
+</div>
+<div>&nbsp;Or outside:</div>
+<div style="background-color: #454545; width: 100%;">
+<blockquote><span style="color: #ffff00;">$this</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">load <span style="color: #ff00ff;">= new</span> </span><span style="color: #00ffff;"><em>CI_Loader</em></span><span style="color: #ffffff;">();</span></blockquote>
+<blockquote><span style="color: #ffff00;">$this</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">load</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">library(</span><span style="color: #ff9900;">"FormBuilder"</span><span style="color: #ffffff;">);</span></blockquote>
+<blockquote><span style="color: #ffffff;"><span style="color: #ffff00;">$this</span><span style="color: #ff00ff;">-&gt;</span>formbuilder <span style="color: #ff00ff;">=</span> <span style="color: #ff00ff;">new</span> <span style="color: #00ffff;"><em>FormBuilder</em></span>();</span></blockquote>
+</div>
+<p>Afterwards the formbuilder is loaded and ready for use.</p>
+<p>Next steps:</p>
+<ul>
+<li><a href="header.html">Setting Form Header Data (action &amp; method)</a></li>
+<li><a href="create_input.html">Creating Input</a></li>
+<li><a href="create_element.html">Creating Other Element</a></li>
+<li><a href="create_childs.html">Creating Childelements</a></li>
+<li><a href="setrule.html">Setting rule</a></li>
+<li><a href="checkrule.html">Checking rules</a></li>
+</ul>
+<p>If you're ready for generating the form just call getForm(). It returns the form as string so you can echo it. (Or overgive it to a view for viewing)</p>
+<div style="background-color: #454545; width: 100%;">
+<blockquote><span style="color: #ffff00;"><span style="color: #00ffff;">echo</span> $this</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">formbuilder</span><span style="color: #ff00ff;">-&gt;</span><span style="color: #ffffff;">getForm(</span><span style="color: #ffffff;">);</span></blockquote>
+</div>
