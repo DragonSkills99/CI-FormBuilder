@@ -149,6 +149,11 @@ if(!class_exists("Field")){
             empty($this->class);
         }
         
+        public function setupSubmit($text = "Send data"){
+            $this->setType("submit")->setTag("input")->setDescription($text)->setFillBothRows(true)->setName("submit")->setValue($text)->setInnerValue(null);
+            return $this;
+        }
+        
         public function parent(){
             return $this->parent;
         }
