@@ -1,10 +1,41 @@
+
+<head>
+<style type="text/css">
+.auto-style2 {
+	font-family: "Courier New", Courier, monospace;
+}
+.auto-style3 {
+	color: #FFFF00;
+	font-family: "Courier New", Courier, monospace;
+}
+.auto-style4 {
+	color: #ffffff;
+	font-family: "Courier New", Courier, monospace;
+	padding-left: 60px;
+	background-color: #454545;
+}
+.auto-style5 {
+	color: #ffffff;
+	font-family: "Courier New", Courier, monospace;
+	padding-left: 30px;
+	background-color: #454545;
+}
+.auto-style6 {
+	font-family: "Courier New", Courier, monospace;
+	color: #FF00FF;
+}
+</style>
+</head>
+
 <h2>Checking rules</h2>
 <p>After setting all rules for the fields you should apply these rules with the setup() returns void method:</p>
-<div style="background-color: #454545; width: 100%; padding-left: 30px;">&nbsp;<span style="color: #ffffff;">$this-&gt;formbuilder-&gt;setup();</span></div>
+<div style="background-color: #454545; width: 100%; padding-left: 30px; color: #FF0066;">
+	<span class="auto-style2">&nbsp;</span><span class="auto-style3">$this</span><span class="auto-style6">-&gt;</span><span style="color: #ffffff;" class="auto-style2">formbuilder</span><span class="auto-style6">-&gt;</span><span style="color: #ffffff;" class="auto-style2">setup();</span></div>
 <p>Afterwise you can check if all entered values are valid with the validate() returns boolean method:</p>
-<div style="background-color: #454545; width: 100%; padding-left: 30px;">&nbsp;<span style="color: #ffffff;">if($this-&gt;formbuilder-&gt;validate()){</span></div>
-<div style="background-color: #454545; width: 100%; padding-left: 60px;"><span style="color: #ffffff;">//use the data from the form</span></div>
-<div style="background-color: #454545; width: 100%; padding-left: 30px;"><span style="color: #ffffff;">}</span></div>
-<div style="background-color: #454545; width: 100%; padding-left: 30px;"><span style="color: #ffffff;">//show the form</span></div>
+<div style="background-color: #454545; width: 100%; padding-left: 30px;">
+	<span class="auto-style6">if</span><span style="color: #ffffff;" class="auto-style2">(</span><span class="auto-style3">$this</span><span class="auto-style6">-&gt;</span><span style="color: #ffffff;" class="auto-style2">formbuilder</span><span class="auto-style6">-&gt;</span><span style="color: #ffffff;" class="auto-style2">validate()){</span></div>
+<div style="width: 100%; color: #00FF00;" class="auto-style4">//use the data from the form</div>
+<div style="width: 100%; " class="auto-style5">}</div>
+<div style="width: 100%; color: #00FF00;" class="auto-style5">//show the form</div>
 <p>&nbsp;If validate() failes it will automatically show the errors in the form.</p>
 <a href="http://htmlpreview.github.io/?https://github.com/DragonSkills99/CI-FormBuilder/blob/master/Documentation/GettingStarted.html"><img src="https://raw.githubusercontent.com/DragonSkills99/CI-FormBuilder/master/Documentation/github.png"></a>
