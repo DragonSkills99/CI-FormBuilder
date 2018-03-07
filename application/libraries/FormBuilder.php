@@ -137,6 +137,8 @@ if(!class_exists("Field")){
         public $childs = array();
         public $parameter = array();
         public $rule;
+        public $fillpreval = false;
+        public $prevalfield = "value";
         private $parent = null;
         
         public function __construct(){
@@ -147,6 +149,16 @@ if(!class_exists("Field")){
             empty($this->type);
             empty($this->inbothrows);
             empty($this->class);
+        }
+        
+        public function setFillPreviousValue($val){
+            $this->fillpreval = $val;
+            return $this;
+        }
+        
+        public function setPreviousValueField($prevalfield){
+            $this->prevalfield = $prevalfield;
+            return $this;
         }
         
         public function setupSubmit($text = "Send data"){
@@ -171,6 +183,11 @@ if(!class_exists("Field")){
             unset($ivalue);
             unset($type);
             unset($class);
+            if($this->fillpreval){
+                if(isset($this->prevalfield) && $this->prevalfield !== null){
+                    $this->parameter[$this->prevalfield] = $_REQUEST[$this->name];
+                }
+            }
             $description = "";
             $name = "";
             $ivalue = "";
